@@ -1,23 +1,157 @@
-<! DOCTYBE html>
-<html>
-<body>
-<div></div>
-<h1 align="center">hi，Wellcome my word !</h1>
-<h1>FITST：</h1>
-<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.HXNnHMyPkwBiSYgW3E6kcAHaHD?pid=ImgDet&rs=1" width="auto" height="auto">
-<div></div>
-<h1>哈哈哈，开玩笑的啦，这是我做的第一个全新开始</h1>
-<img src="https://ts1.cn.mm.bing.net/th/id/R-C.bfb3eb881378050067c5cbbff414461f?rik=35rILG7Rt%2f0cnA&riu=http%3a%2f%2fww2.sinaimg.cn%2flarge%2f006APoFYjw1f8lhc8jf97j30f20eamy3.jpg&ehk=zMwi2v8hWQ3gCoC2AMdwSUIEcCLr36CTrt3bH9YS3oc%3d&risl=&pid=ImgRaw&r=0" height="auto" width="auto">
-<div></div>
-<h1>下面来介绍我自己<br>一个19岁的男娃</h1>
-<img src="https://ts1.cn.mm.bing.net/th/id/R-C.1d88668adf48c351b76cced3ad118b27?rik=lw%2f9vRlZikO%2fPw&riu=http%3a%2f%2fwx4.sinaimg.cn%2fmw690%2f6a04b428gy1fuqhu2vh08g203r040aa9.gif&ehk=mT0PYmVD6BV4T4o2ADUcpWPcY7SZd9PYigOITZ2DVQ8%3d&risl=&pid=ImgRaw&r=0" height="auto" width="auto"
-<div></div>
-<h1>爱好吃饭睡觉,嘿嘿嘿</h1>
-<img src="https://pica.zhimg.com/v2-de65e4df2865faf846292192f4e8725c_r.jpg?source=1940ef5c" width="auto" height="auto"
-<div></div>
-<h1>哈哈，其实也没什么好说的<br>那就在这里祝大家国庆节快乐了！</h1>
-<img src="https://p.qqan.com/up/2021-1/16106024106196089.jpg" width="auto" height="auto"
-     <div></div>
-     <a href="https://tianmenglove.github.io/01/new.html">下一页</a>
-</body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+          border: 1px solid black;
+        } */
+      .yinYing {
+        box-shadow: rgb(rgb(75, 66, 66), rgb(66, 71, 66), rgb(94, 94, 139));
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(182, 180, 180);
+        font-size: 14px;
+        color: rgb(64, 88, 92);
+      }
+      /* 当屏幕宽度小于600px时要改变的css 
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neiRong::-webkit-scrollbar {
+        display: none;
+      }*/
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="ceBian baiSe yinYing">
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="https://p3.itc.cn/q_70/images01/20220607/83d65230d96f480aa59ae9725ed98637.jpeg"
+          width="100px"
+          height="100px"
+          alt=""
+        />
+        <div style="margin-left: 10px">小萌</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <h1 class="daoHang"><a href="https://www.4399.com/">4399小游戏</a></h1>
+        <h1 class="daoHang"><a href="https://v.qq.com/">腾讯视频</a></h1>
+        <h1 class="daoHang"><a href="https://www.iqiyi.com/">爱奇艺</a></h1>
+        <h1 class="daoHang">
+          <a href="https://www.bilibili.com/">哔哩哔哩</a>
+        </h1>
+        <h1 class="daoHang">
+          <a href="https://www.douyin.com/?enter=guide">抖音</a>
+        </h1>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <audio
+        src="https://s21.aconvert.com/convert/p3r68-cdx67/w39tz-ob164.mp3"
+        controls="controls"
+        autoplay="autoplay"
+        loop="loop"
+      ></audio>
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 1" class="baiSe yinYing"></div>
+      <!--内容区-->
+
+      <div style="overflow: auto" class="neiRong flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex shuJuQu">
+            <!--数据块-->
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="youQu flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style="height: 150px" class="baiSe yinYing"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="baiSe mgt8 yinYing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
